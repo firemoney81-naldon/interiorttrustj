@@ -1,23 +1,285 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+  <!-- Schema.org Markup for Home Renovation Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "30평대 리모델링 전문 그룹",
+    "url": "https://www.yourremodelingdomain.co.kr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "전국",
+      "addressRegion": "대한민국",
+      "streetAddress": "주요 도시 리모델링 전문",
+      "addressCountry": "KR"
+    },
+    "telephone": "+82-10-0000-0000",
+    "openingHours": "Mo-Su 09:00-18:00",
+    "priceRange": "₩₩₩",
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "서울" },
+      { "@type": "AdministrativeArea", "name": "경기" },
+      { "@type": "AdministrativeArea", "name": "부산" },
+      { "@type": "AdministrativeArea", "name": "인천" },
+      { "@type": "AdministrativeArea", "name": "대구" },
+      { "@type": "AdministrativeArea", "name": "대전" },
+      { "@type": "AdministrativeArea", "name": "광주" },
+      { "@type": "AdministrativeArea", "name": "울산" },
+      { "@type": "AdministrativeArea", "name": "세종" }
+    ],
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "김**" },
+        "reviewBody": "합리적인 가격에 만족스러운 30평대 아파트 리모델링을 했습니다.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Modern CSS Styling -->
+  <style>
+    /* Global Styles */
+    body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; line-height: 1.8; color: #333; background-color: #f7f9fc; font-size: 1.1rem; }
+    h1, h2, h3, h4 { font-weight: 700; color: #2c3e50; line-height: 1.4; }
+    h1 { font-size: 2.5rem; text-align: center; margin-bottom: 10px; }
+    h2 { font-size: 2rem; border-bottom: 3px solid #e1e7f0; padding-bottom: 15px; margin-top: 40px; }
+    h3 { font-size: 1.5rem; color: #34495e; margin-top: 30px; }
+    p { margin-bottom: 20px; text-align: justify; }
+    a { color: #3498db; text-decoration: none; transition: color 0.3s; }
+    a:hover { color: #2980b9; text-decoration: underline; }
+    ul, ol { margin-left: 20px; margin-bottom: 20px; }
+    li { margin-bottom: 10px; }
+
+    /* Layout Structure */
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    header { background: linear-gradient(135deg, #3498db, #2c3e50); color: #fff; padding: 40px 20px; text-align: center; border-bottom: 8px solid #2980b9; }
+    header p { font-size: 1.2rem; margin-top: 0; opacity: 0.9; }
+    .nav { background-color: #f1f1f1; padding: 15px 0; border-bottom: 1px solid #ddd; text-align: center; }
+    .nav a { margin: 0 15px; color: #333; font-weight: 600; font-size: 1rem; }
+    .nav a:hover { color: #3498db; }
+    .cta-button { background-color: #e67e22; color: #fff; padding: 15px 30px; border-radius: 5px; font-weight: bold; font-size: 1.1rem; display: inline-block; margin-top: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: background-color 0.3s; }
+    .cta-button:hover { background-color: #d35400; }
+    section { padding: 30px 20px; border-top: 1px solid #eee; }
+
+    /* Data Visualization Elements */
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 1rem; }
+    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+    th { background-color: #f9f9f9; font-weight: 600; color: #2c3e50; }
+    td strong { font-weight: 600; color: #e74c3c; }
+
+    /* Form Styles */
+    form { background-color: #ecf0f1; padding: 30px; border-radius: 8px; margin-top: 20px; border: 1px solid #ddd; }
+    form label { display: block; margin-bottom: 8px; font-weight: 600; color: #34495e; }
+    form input[type="text"], form input[type="email"], form input[type="tel"], form select, form textarea { width: calc(100% - 22px); padding: 12px; margin-bottom: 15px; border: 1px solid #bdc3c7; border-radius: 5px; font-size: 1rem; box-sizing: content-box; }
+    form button { background-color: #2ecc71; color: #fff; padding: 15px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1rem; font-weight: bold; transition: background-color 0.3s; }
+    form button:hover { background-color: #27ae60; }
+
+    /* Specific Section Styling */
+    .highlight-box { background-color: #f0f8ff; padding: 20px; border-left: 5px solid #3498db; margin-top: 20px; border-radius: 5px; font-size: 1.05rem; }
+    .keyword-list { list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; }
+    .keyword-list li { background-color: #eaf1f9; padding: 8px 15px; border-radius: 20px; margin: 5px; font-size: 0.9rem; color: #555; border: 1px solid #dcdcdc; }
+
+    /* Footer */
+    footer { background-color: #2c3e50; color: #ecf0f1; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+    footer nav { margin-top: 10px; }
+    footer nav a { color: #ecf0f1; margin: 0 10px; text-decoration: none; }
+  </style>
+
+  <!-- Google Fonts for better Korean readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>30평대 아파트 리모델링, 2026년 최신 비용과 성공 전략</h1>
+    <p>아파트 인테리어 평균 금액부터 내돈내산 후기, 합리적인 업체 선정 노하우까지 한 번에</p>
+    <a href="#quote-form" class="cta-button">무료 견적 상담 받기</a>
+  </header>
+
+  <nav class="nav">
+    <a href="#cost">비용 분석</a> |
+    <a href="#process">과정 및 노하우</a> |
+    <a href="#design">디자인 트렌드</a> |
+    <a href="#review">업체 선정</a> |
+    <a href="#keywords">관련 키워드</a>
+  </nav>
+
+  <div class="container">
+    <section id="cost">
+      <h2>1. 30평대 아파트 리모델링 평균 비용 분석 (2026년 기준)</h2>
+      <p>많은 예비 건축주들이 가장 궁금해하는 부분은 <strong>"30평대 아파트 리모델링에 얼마가 들까?"</strong>입니다. 2026년도 시장 상황을 기준으로 30평대 아파트 리모델링의 평균 금액은 <strong style="color: #c0392b;">경량화 리모델링 3,000만원 ~ 5,000만원, 전체 올 수리 시 6,000만원 ~ 1억원 이상</strong>으로 형성되어 있습니다. 하지만 리모델링 비용은 단순히 평당 금액으로 계산하기 어렵습니다. 시공 범위, 자재 등급, 인테리어 디자인 난이도, 그리고 지역별 인건비 차이에 따라 견적은 크게 달라질 수 있습니다.</p>
+
+      <h3>1-1. 리모델링 유형별 예상 금액 비교</h3>
+      <p>30평대 아파트를 기준으로 한 예상 비용을 세 가지 유형으로 나누어 비교했습니다. 이는 기본적인 가이드라인이며, 정확한 견적은 현장 실측을 통해 받아보시는 것이 중요합니다.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>주요 작업 범위</th>
+            <th>2026년 예상 금액 (30평대 기준)</th>
+            <th>주요 특징 및 장점/단점</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>부분 리모델링 (경량화)</td>
+            <td>도배, 장판/마루 교체, 욕실 1개, 싱크대 교체 등 필수 요소만 진행</td>
+            <td>3,000만원 ~ 5,000만원</td>
+            <td><strong>장점:</strong> 비용 절감, 공사 기간 단축. <strong>단점:</strong> 전체적인 통일성 부족, 구축 아파트의 경우 한계 명확.</td>
+          </tr>
+          <tr>
+            <td>전체 올 수리 (중급 자재)</td>
+            <td>철거 포함 전체 공사 진행 (주방, 욕실 2개, 바닥, 벽체, 조명, 문 교체, 확장 포함)</td>
+            <td>6,000만원 ~ 8,000만원</td>
+            <td><strong>장점:</strong> 최적의 가성비, 신축 아파트 수준의 변화. <strong>단점:</strong> 공사 기간 4주 내외 소요, 꼼꼼한 견적 필수.</td>
+          </tr>
+          <tr>
+            <td>프리미엄 리모델링 (고급 자재)</td>
+            <td>전체 올 수리 + 시스템 에어컨, 수입 자재(타일, 마루), 맞춤 제작 가구, 가전 배치, 디자인 설계 집중</td>
+            <td>8,000만원 ~ 1억 2,000만원 이상</td>
+            <td><strong>장점:</strong> 맞춤형 디자인, 높은 주거 만족도, 자산 가치 상승. <strong>단점:</strong> 높은 비용 부담, 업체 선정 난이도 높음.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>1-2. 비용 절감 노하우: 저렴한곳 찾는 방법과 숨은 비용</h3>
+      <p>리모델링 비용을 낮추고 싶다면, <strong>저렴한곳</strong>을 무작정 찾는 것보다 합리적인 금액을 제시하는 업체를 선별해야 합니다. <strong>싼곳</strong>만 고집하다가 부실 공사나 추가 비용 발생으로 더 많은 손해를 볼 수 있습니다. 비용 절감의 핵심은 불필요한 공사 항목을 제외하고 자재 등급을 조정하는 것입니다. 예를 들어, 거실 확장 대신 단열 보강만 진행하거나, 시스템 에어컨 대신 벽걸이형을 설치하는 등의 선택이 있습니다. 또한, 주방 싱크대나 붙박이장 등은 자체 제작 업체가 더 저렴할 수 있습니다.</p>
+      <div class="highlight-box">
+        <h4>숨은 비용 발생 주의 항목 (내돈내산 후기 기반)</h4>
+        <ul>
+          <li><strong>추가 철거 및 폐기물 처리비:</strong> 구축 아파트의 경우 예상치 못한 석면 발견이나 콘크리트 강도가 높아 철거 비용이 증가할 수 있습니다.</li>
+          <li><strong>단열 공사:</strong> 외풍이 심한 아파트의 경우 창호 교체 외에도 내부 단열 공사(아이소핑크, 단열재)가 추가되어 비용이 크게 상승합니다.</li>
+          <li><strong>가구 및 가전:</strong> 리모델링 견적에는 가구, 가전 비용이 포함되지 않는 경우가 많습니다. 이사 후 총지출을 고려해야 합니다.</li>
+          <li><strong>보양 작업 및 인건비:</strong> 공사 규모에 따라 인건비와 엘리베이터 보양 작업비가 추가될 수 있습니다.</li>
+        </ul>
+      </div>
+
+      <h3>1-3. 전국 지역별 30평대 리모델링 비용 평균 차이</h3>
+      <p>인건비와 물류비, 그리고 지역 특성에 따라 30평대 리모델링 비용은 지역별로 차이가 있습니다. <strong>서울 및 경기 지역</strong>은 인건비와 자재 물류비가 상대적으로 높아 전국 평균보다 10~20%가량 높은 편입니다. 특히 <strong>강남구, 서초구, 송파구</strong> 등 선호도가 높은 지역은 인테리어 업체 경쟁이 치열하지만, 고급 자재 수요가 많아 프리미엄 시장이 발달해 있습니다.</p>
+      <p>반면, <strong>부산, 대구, 인천, 대전, 광주</strong> 등의 광역시와 <strong>수원, 고양, 용인, 창원</strong> 등 인구가 많은 지방 거점 도시는 평균적인 견적이 형성되어 있습니다. <strong>청주, 천안, 전주, 포항</strong> 등 중소도시는 비교적 인건비가 저렴하여 비용 절감의 여지가 있습니다. <strong>김해, 파주, 화성, 남양주</strong> 등 신도시 지역은 입주 박람회를 통해 공동 구매 시공을 저렴하게 진행할 수 있는 장점이 있습니다.</p>
+      <p>리모델링을 시작하기 전에 반드시 <strong>서울 30평대 인테리어 비용</strong>, <strong>부산 아파트 올수리 견적</strong>, <strong>경기 리모델링 추천 업체</strong> 등을 검색하여 지역별 특성을 이해하는 것이 중요합니다. 특히 <strong>저렴한곳</strong>을 찾기 위해 발품을 팔더라도, 반드시 해당 지역의 A/S 체계를 갖춘 업체를 선택해야 합니다.</p>
+
+    </section>
+
+    <section id="process">
+      <h2>2. 성공적인 30평대 리모델링 과정과 핵심 노하우</h2>
+      <p>리모델링은 단순한 공사가 아니라 삶의 질을 높이는 투자입니다. 30평대 아파트 리모델링은 일반적으로 4주에서 6주 정도 소요되며, 계획 단계에서부터 철저한 준비가 필요합니다. 다음은 2026년 기준, 성공적인 리모델링을 위한 핵심 노하우입니다.</p>
+
+      <h3>2-1. 단계별 진행 과정 (Checklist)</h3>
+      <ol>
+        <li><strong>계획 및 디자인 구상 (1~2주):</strong> 원하는 인테리어 스타일(미니멀리즘, 북유럽 스타일, 모던 등) 결정 및 레퍼런스 수집. 예산 책정.</li>
+        <li><strong>견적 및 업체 선정 (1~2주):</strong> 최소 3곳 이상의 업체에서 견적 비교. <strong>업체 추천</strong> 리스트와 <strong>내돈내산 후기</strong>를 참고하여 꼼꼼하게 검토.</li>
+        <li><strong>계약 및 상세 디자인 협의 (1주):</strong> 계약서에 공사 범위, 자재 등급, 기간, A/S 규정 명시. 디자인 수정 및 최종 확정.</li>
+        <li><strong>공사 진행 (4~6주):</strong> 철거, 설비, 목공, 전기, 타일, 도장, 바닥, 주방, 가구 설치 순서로 진행.</li>
+        <li><strong>마무리 및 A/S (공사 완료 후):</strong> 하자 점검 및 잔금 지급. A/S 기간 내 하자 발생 시 즉시 보수 요청.</li>
+      </ol>
+
+      <h3>2-2. 구축 아파트 리모델링의 장점과 단점 (차이점)</h3>
+      <p>구축 아파트(준공 15년 이상)는 신축 아파트와 비교하여 리모델링 시 고려해야 할 <strong>차이점</strong>이 많습니다. <strong>장점</strong>으로는 철거를 포함한 전면적인 구조 변경이 비교적 자유롭다는 점이 있습니다. 원하는 대로 벽을 허물거나 공간을 재구성할 수 있습니다. <strong>단점</strong>은 노후화된 설비(배관, 난방) 교체가 필수적이며, 이로 인해 예상치 못한 추가 비용이 발생할 수 있습니다. 특히 <strong>오래된 아파트 리모델링</strong> 시 단열 공사를 소홀히 하면 결로나 난방비 폭탄의 원인이 될 수 있으므로 전문가와 충분한 상담이 필요합니다.</p>
+
+    </section>
+
+    <section id="design">
+      <h2>3. 30평대 공간 활용을 위한 2026년 디자인 트렌드</h2>
+      <p>30평대 아파트 인테리어는 가족 구성원의 라이프스타일을 반영하는 것이 핵심입니다. 2026년 디자인 트렌드는 '공간의 유연성'과 '심리적 안정감'에 중점을 둡니다. </p>
+
+      <h3>3-1. 주방-거실 통합형 LDK (Living-Dining-Kitchen) 구조</h3>
+      <p>30평대 리모델링에서 가장 인기 있는 변화는 주방과 거실을 통합하는 LDK 구조입니다. 이를 통해 좁게 느껴지던 공간을 넓게 활용하고 가족 간 소통을 활성화할 수 있습니다. 특히 <strong>아파트 인테리어</strong>에서 아일랜드 식탁을 활용한 대면형 주방은 주방을 단순한 조리 공간이 아닌 가족의 중심 공간으로 변모시킵니다.</p>
+
+      <h3>3-2. 친환경 자재와 지속 가능한 인테리어</h3>
+      <p>환경과 건강에 대한 인식이 높아지면서 친환경 자재 사용이 중요해지고 있습니다. 특히 아이가 있는 집은 E0 등급 이상의 친환경 마루나 벽지를 사용하고, <strong>아토피</strong>나 호흡기 질환을 예방할 수 있는 벤자민무어 같은 친환경 페인트가 인기를 끌고 있습니다. <strong>30평대 아파트 리모델링</strong> 시 자재 선정에 신중을 기하는 것이 장기적인 건강에 도움이 됩니다.</p>
+
+      <h3>3-3. 공간별 맞춤 설계 (서재, 드레스룸, 다용도실)</h3>
+      <p>방 3개짜리 30평대 아파트를 40평대처럼 사용하는 노하우는 공간 분할입니다. 안방을 서재와 침실로 분리하거나, 작은 방 2개를 합쳐 대형 드레스룸으로 만드는 등 효율적인 공간 분할이 중요합니다. <strong>시스템 가구</strong>를 활용하면 수납공간을 극대화하면서도 깔끔한 인테리어를 완성할 수 있습니다.</p>
+
+      <div class="highlight-box">
+        <h4>성공적인 30평대 인테리어 팁</h4>
+        <ul>
+          <li><strong>조명 설계:</strong> 메인등 대신 간접 조명(다운라이트, 펜던트 조명)을 사용하여 공간을 더욱 넓고 아늑하게 연출합니다.</li>
+          <li><strong>수납 공간:</strong> 붙박이장과 팬트리 공간을 최대한 확보하여 '보이는 수납'을 최소화합니다.</li>
+          <li><strong>컬러 매칭:</strong> 전체적으로 톤온톤(Tone on Tone)의 밝은 색상을 사용하여 시각적으로 확장감을 줍니다.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section id="review">
+      <h2>4. 30평대 리모델링 업체 선정 가이드 및 주의사항</h2>
+      <p>성공적인 리모델링의 8할은 좋은 업체를 만나는 것입니다. <strong>30평대 인테리어 업체 추천</strong> 리스트를 찾아보는 것도 좋지만, 다음의 기준을 통해 직접 검증해야 합니다. 특히 <strong>내돈내산 후기</strong>를 꼼꼼히 살피고, 업체별 <strong>순위</strong>나 평점을 참고하되 맹신하지 않아야 합니다.</p>
+
+      <h3>4-1. 업체 선정 시 필수 확인 사항</h3>
+      <ul>
+        <li><strong>전문성:</strong> 해당 업체의 포트폴리오(시공 사례) 중 30평대 아파트 시공 경험이 많은지 확인합니다.</li>
+        <li><strong>계약서:</strong> 견적서에 모든 항목이 상세히 기재되어 있는지 확인합니다. 자재의 등급과 브랜드, 추가 비용 항목, 공사 기간, A/S 기간 및 범위가 명확해야 합니다.</li>
+        <li><strong>보험 가입 여부:</strong> 건설산업기본법에 따라 1500만원 이상 공사 시 의무 가입하는 '하자 이행 보증' 및 '영업배상 책임보험' 가입 여부를 확인합니다. 이는 공사 중 발생할 수 있는 사고나 하자에 대한 안전장치입니다.</li>
+        <li><strong>커뮤니케이션:</strong> 업체 담당자와의 소통이 원활한지 확인합니다. 리모델링은 현장에서 변수가 많기 때문에 빠른 피드백과 소통 능력이 중요합니다.</li>
+      </ul>
+
+      <h3>4-2. 계약서 작성 시 꼭 넣어야 할 조항</h3>
+      <p>하자 발생 시 <strong>A/S 기간</strong>을 명확히 하는 것이 중요합니다. 일반적으로 1년이지만, 배관이나 누수 등의 하자는 2년까지 요구할 수 있습니다. 또한 공사 지연에 따른 배상 조항을 명시하여 업체 측의 무책임한 공사 지연을 방지해야 합니다. <strong>30평대 아파트 리모델링</strong> 시공에서 가장 많은 분쟁이 발생하는 부분 중 하나이므로, 계약 전 충분히 논의해야 합니다.</p>
+
+      <h3>4-3. 지역별 리모델링 업체 추천 키워드 (전국)</h3>
+      <p>전국 주요 도시의 리모델링 키워드와 <strong>내돈내산 후기</strong>를 종합하여 업체를 검색하면 더 정확한 정보를 얻을 수 있습니다. 예를 들어, <strong>용인 30평대 아파트 리모델링 비용</strong>, <strong>수원 인테리어 저렴한곳</strong>, <strong>창원 아파트 올수리 추천</strong> 등의 검색어를 활용해 보세요. <strong>전국 리모델링 업체 순위</strong>는 없지만, 지역별로 평판 좋은 업체를 찾는 것이 핵심입니다.</p>
+
+    </section>
+
+    <section id="keywords">
+      <h2>5. 30평대 리모델링 관련 키워드 분석 및 정보 모음</h2>
+      <p>30평대 리모델링을 검색하는 사용자들이 함께 찾는 키워드를 통해 더 많은 정보를 얻을 수 있습니다. 다음은 네이버 검색 자동완성 및 연관 키워드를 분석한 목록입니다.</p>
+      <ul class="keyword-list">
+        <li>아파트 리모델링 비용</li><li>30평대 인테리어 견적</li><li>아파트 올수리 금액</li><li>리모델링 평균 가격</li><li>인테리어 잘하는 곳 추천</li><li>30평대 인테리어 후기</li><li>내돈내산 리모델링</li><li>주방 리모델링 비용</li><li>화장실 리모델링 금액</li><li>베란다 확장 공사 비용</li><li>구축 아파트 리모델링 장단점</li><li>아파트 리모델링 기간</li><li>부분 인테리어 vs 전체 인테리어</li><li>서울 30평대 리모델링</li><li>경기 30평대 아파트 인테리어</li><li>부산 리모델링 업체</li><li>대전 30평대 리모델링 견적</li><li>대구 인테리어 잘하는 곳</li><li>인천 아파트 올수리</li><li>광주 리모델링 비용</li><li>울산 리모델링 후기</li><li>세종시 리모델링 업체 순위</li><li>수원 30평대 인테리어</li><li>용인 아파트 인테리어</li><li>화성 30평대 리모델링</li><li>성남 리모델링 비용</li><li>안산 인테리어 추천</li><li>고양시 리모델링 업체</li><li>남양주 인테리어</li><li>의정부 아파트 인테리어</li><li>김포 리모델링</li><li>파주 인테리어 잘하는 곳</li><li>평택 30평대 아파트 리모델링</li><li>창원 인테리어 후기</li><li>청주 30평대 리모델링</li><li>천안 아파트 올수리</li><li>전주 리모델링 업체</li><li>포항 30평대 인테리어</li><li>구미 인테리어 견적</li><li>군산 리모델링 비용</li><li>양산 아파트 인테리어</li><li>김해 30평대 리모델링</li><li>사다리차 비용</li><li>폐기물 처리 비용</li>
+      </ul>
+    </section>
+
+    <section id="external-links">
+      <h2>6. 공인된 리모델링 정보 출처 및 유의사항</h2>
+      <p>리모델링은 큰 금액이 투입되는 만큼, 공인된 기관의 정보를 참고하여 사전에 분쟁을 예방해야 합니다. 다음은 신뢰할 수 있는 외부 사이트 목록입니다.</p>
+      <ul>
+        <li><strong>건설산업기본법:</strong> 리모델링 공사 규모에 따른 면허 기준 및 규제를 확인합니다. <a href="http://www.law.go.kr/법령/건설산업기본법" target="_blank">대한민국 법제처</a> [cite: law_go_kr]</li>
+        <li><strong>국토교통부 주택 건설 기준:</strong> 주택법에 따른 아파트 구조 변경 및 단열 규정을 확인합니다. <a href="http://www.molit.go.kr" target="_blank">국토교통부</a> [cite: molit_go_kr]</li>
+        <li><strong>소비자 분쟁 해결 기준:</strong> 리모델링 하자 발생 시 공정거래위원회에서 정한 기준을 확인합니다. <a href="http://www.kca.go.kr" target="_blank">한국소비자원</a> [cite: kca_go_kr]</li>
+        <li><strong>인테리어 자재 정보:</strong> 친환경 자재 등급이나 건축 자재에 대한 정보를 확인합니다. <a href="https://namu.wiki/w/인테리어" target="_blank">나무위키</a> [cite: namu_wiki]</li>
+        <li><strong>인테리어 표준 계약서:</strong> 한국인테리어디자인협회에서 제공하는 표준 계약서 양식을 참고하여 불필요한 분쟁을 줄입니다. <a href="http://www.kidp.or.kr" target="_blank">한국디자인진흥원</a> [cite: kidp_or_kr]</li>
+      </ul>
+    </section>
+
+    <section id="quote-form">
+      <h2>7. 30평대 리모델링 무료 견적 및 상담 신청</h2>
+      <p>고객님의 예산과 취향에 맞는 맞춤형 견적을 받아보세요. 전문 팀이 2026년 최신 자재와 시공 노하우를 바탕으로 합리적인 <strong>예상 금액</strong>을 제시해 드립니다. 상담을 통해 <strong>저렴한곳</strong>을 찾는 노하우와 <strong>장단점</strong> 비교, <strong>평균</strong> 시세 등을 상세히 안내해 드립니다. 아래 양식을 작성해 주시면 담당자가 연락드리겠습니다.</p>
+      <form action="/submit-quote" method="post">
+        <label>성함: <input type="text" name="name" placeholder="실명을 입력해주세요" required></label>
+        <label>연락처: <input type="tel" name="phone" placeholder="예: 010-0000-0000" required></label>
+        <label>거주 지역: <select name="region" required>
+          <option value="">지역 선택</option>
+          <option value="서울">서울</option>
+          <option value="경기">경기</option>
+          <option value="인천">인천</option>
+          <option value="부산">부산</option>
+          <option value="대구">대구</option>
+          <option value="대전">대전</option>
+          <option value="광주">광주</option>
+          <option value="울산">울산</option>
+          <option value="세종">세종</option>
+          <option value="기타">기타 지역</option>
+        </select></label>
+        <label>아파트 평형: <input type="text" name="size" placeholder="예: 32평" required></label>
+        <label>리모델링 목적: <select name="purpose" required>
+          <option value="">선택</option>
+          <option value="전체 올 수리">전체 올 수리 (입주 예정)</option>
+          <option value="부분 리모델링">부분 리모델링 (거주 중 공사)</option>
+          <option value="주방/욕실만">주방/욕실만 부분 공사</option>
+          <option value="디자인 상담">디자인 및 견적 상담</option>
+        </select></label>
+        <label>상세 요청 사항 (예산, 공사 희망일 등): <textarea name="details" rows="5" placeholder="궁금한 점이나 특별히 원하는 디자인 요소를 말씀해주세요."></textarea></label>
+        <button type="submit">무료 상담 요청</button>
+      </form>
+    </section>
+  </div>
+
+  
+
+  
